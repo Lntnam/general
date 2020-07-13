@@ -8,6 +8,11 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 git config --global url."git@github.com:".insteadOf "https://github.com/"
 ```
 
+##### # For git to use CRLF from input
+```
+git config --global core.autocrlf input
+```
+
 ##### # SSH permission
 .ssh folder: 700
 .pub: 644
