@@ -20,3 +20,11 @@ private keys: 600
 
 ##### # Stop all docker containers
 docker stop $(docker ps -a -q)
+
+##### Analyzing logs
+### Find sites with most 500 errors
+```
+cat access.log | grep " 500 " | cut -d '"' -f8 | sort | uniq -c | sort -rn
+```
+
+### 
